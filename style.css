@@ -183,7 +183,7 @@ main {
   }
 
   .box.active > img {
-    filter: grayscale(50%) opacity(50%);
+    filter: grayscale(0%) opacity(100%);
   }
 
   /* All box will turn grey except the one hovering*/
