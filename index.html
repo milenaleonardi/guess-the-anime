@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Anime</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="init()">
+    <header class="header">
+      <h1>
+        From the list below, which <span id="anime">Anime</span> am I thinking
+        of?
+      </h1>
+    </header>
+
+    <main>
+      <section id="animes" class="section-container">
+        <div class="box box-1 box-active" data-text="Bleach">
+          <img src="./assets/bleach-2.jpg" alt="Ichigo Kurosaki" />
+        </div>
+        <div class="box box-2 box.active" data-text="Demon Slayer">
+          <img src="./assets/demon-slayer-2.jpg" alt="Nezuko Kamado" />
+        </div>
+        <div class="box box-3 box.active" data-text="Dragon Ball">
+          <img src="./assets/dragon-ball-1.webp" alt="Goku" />
+        </div>
+        <div class="box box-4 box.active" data-text="Naruto">
+          <img src="./assets/naruto.webp" alt="Naruto Uzumaki" />
+        </div>
+        <div class="box box-5 box.active" data-text="One Piece">
+          <img src="./assets/one-piece-1.webp" alt="Monkey D. Luffy" />
+        </div>
+      </section>
+    </main>
+
+    <section class="section-guess">
+      <div class="div-guess">
+        <input type="text" id="answer" placeholder="My guess is..." />
+        <input type="button" value="Make a guess" onclick="guess()" />
+      </div>
+
+      <div id="colorNames"></div>
+      <div id="feedback"></div>
+
+      <div class="div-message">
+        <p>
+          The answer will be displayed on your console (F12 on most browsers)
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
